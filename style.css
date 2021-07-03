@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+:root{
+    --primaryColor: #b8860b;
+    --dotted: #d2691e;
+    --secondaryColor: #373737;
+    --bg:#f5f0da;
+    --ddColor: #212121;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+}
+section{
+    background: #e2e1e0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu-card{
+    background: url("https://img.pngio.com/hd-coffee-bean-vector-png-247361-coffee-bean-vector-pattern-coffee-bean-vector-png-3333_3333.png");
+    background-color: var(--bg);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin:10px;
+    border-radius: 3px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.leafs{
+    padding: 20px 10px;
+    border: 10px solid var(--primaryColor);
+}
+.menu-card-subtitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.menu-card-subtitle h3{
+    font-size: 2.2em;
+    font-family: 'Crimson Text', serif;
+    color: var(--secondaryColor);
+}
+.menu-card-subtitle h2{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+#front{
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cafe-main-image-brand{
+    flex: 1;
+    width: 100%;
+    height: auto;
+    background-color: var(--primaryColor);
+    background: url("https://assets.codepen.io/t-1/nathan-dumlao-6VhPY27jdps-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+#cafe-main-image-brand h1{
+    background:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.0));
+    color: #ffffff;
+    padding: 10px;
+    font-size: 6em;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+}
+#front-menu{
+    height:50vh;
+    flex: 1;
+    background-color:var(--bg) ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.menu-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:10px;
+}
+.menu-time h2{
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 5px;
+    color: darkgoldenrod;
+}
+.hours{
+    margin-top: 5px;
+}
+td{
+padding: 4px;
+font-size: 19px;
+font-style: italic;
+text-align: left;
+font-weight: 500;
+font-family: 'Crimson Text', serif;
+color: rgb(95, 95, 95);
+}
+.dashes{
+    margin: 0 10px;
+    border-bottom: 7px dotted #d2691e;
+}
+.place-contact address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 20px;
+    color: var(--secondaryColor);
+}
+.place-contact address svg{
+    margin-right: 10px;
+}
+.place-contact address a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.cafe-items-container{
+    padding: 20px 10px;
+}
+.cafe-items-container .cafe-items-title{
+    display: flex;
+    flex-direction: column;   
+}
+.cafe-items-title h2{
+    font-size: 2.3em;
+    font-weight: 700;
+    color: var(--secondaryColor)
+}
+.cafe-items-title p{
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: var(--primaryColor);
+}
+dl{
+    padding: 20px 0;
+}
+dt{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+dd{
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 2px;
+    color: var(--ddColor);
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin: 0 0 1em 1em;
+    padding: 5px;
+    line-height: 1.2em;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    background: rgba(28, 28, 28, 0.9);
+}
+footer a{
+    text-decoration: none;
+    color: #e2e1e0;
+    font-size: 1.3em;
+    letter-spacing: 0.6px;
+    font-family: 'Dancing Script', cursive;
+}
+@media screen and (max-width:850px) {
+    section{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .menu-card{
+        width: 400px ;
+    }
+}
